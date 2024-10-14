@@ -55,6 +55,7 @@ The listed apps below are not necessary to run the service but where are useful 
 3. An [app](https://github.com/abrd97/labeling) that facilitates the labeling of approximately 1000 images which where cut into its smaller sub-images with the aforementioned repository
 
 ## Installation Fedora
+> INFO: These installlation steps where tested on Fedora 40 WSL. However, this doesn't guarantee that you will be able to bind the camera with your Python code
 
 This is a description for building the librealsense driver and library for Fedora from source. It includes a Python Wrapper.
 
