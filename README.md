@@ -2,11 +2,17 @@
 
 ## Introduction
 
-This repository contains the documentation of the Glas-Position-Recognizer project for the master lab "Advanced Practical Course - Sustainable Process Automation: Humans, Software and the Mediator Pattern (IN2128, IN2106, IN4303)". The main component is the classification model that recognizes which position of the 3x5 grid contains a glas. It contains also links to other repositories which contain software to develop the final product or the final product itself (which by the way is a RESTful service providing an endpoint to capture the image and an endpoint to return a list of all positions that contain a glass based on the image).
+This repository contains the documentation of the Glas-Position-Recognizer project for the master lab "Advanced Practical Course - Sustainable Process Automation: Humans, Software and the Mediator Pattern (IN2128, IN2106, IN4303)". The main component is the classification model that recognizes which position of the 3x5 grid contains a glas. It has also links to other repositories which include software to develop the final product (which by the way is a RESTful service providing an endpoint to capture the image and an endpoint to return a list of all positions that contain a glass based on the image)
+
+### Presentation
+
+For the full demonstration take a look at the MP4 file inside `./video`
+
+![demo](./video/demo.gif)
 
 ### Final product
 
-Follow the [link](https://github.com/abrd97/recognizer) for the repository.
+Follow the [link](https://github.com/abrd97/recognizer) for the repository
 
 #### Run
 
@@ -26,6 +32,10 @@ There are two RESTful endpoints, which are exposed:
 
 - GET - '/depth_image': It returns a base64 encoded 1280x720 depth image
 - POST - '/config' with x-www-form-urlencoded argument `image=<base64 encoded image>`: It returns an array of all x and y offsets for each available glas
+
+Here's an example image with (x, y)-tuples annotating the position offset
+ 
+![demo-image](./demo/demo.png)
 
 > NOTE: The image needs to be a depth image and with the resolution 1280x720
 
