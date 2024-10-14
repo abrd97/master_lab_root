@@ -8,7 +8,7 @@ This repository contains the documentation of the Glas-Position-Recognizer proje
 
 For the full demonstration take a look at the MP4 file inside `./video`
 
-![demo](./video/demo.gif)
+![demo](./demo/demo.gif)
 
 ### Final product
 
