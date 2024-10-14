@@ -19,7 +19,7 @@ Follow the [link](https://github.com/abrd97/recognizer) for the repository
 Follow the instructions to run the service (assuming using bash)
 > NOTE: `librealsense` needs to be installed and the camera needs to be pluged in to be able to start the service. Otherwise the process will terminate. Follow the [installation section](##installation-fedora) to be able to run the app successfully
 > 
-> NOTE: When the server start, it also configures the camera and initializes the model for inference
+> NOTE: When the server starts, it also configures the camera and initializes the model for inference
 
 - `python3.10 -m venv .venv`
 - `source .venv/bin/activate` or on Windows with Git Bash `source .venv/Scripts/activate`
