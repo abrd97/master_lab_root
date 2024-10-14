@@ -96,3 +96,10 @@ After CMake finished successfully, install librealsense:
 - make -j4
 - sudo make install
 ```
+
+## Difficulties
+
+- Training classification model on RGB images with transparent glasses is unsuitable because of bad performance
+- Classify model with 15 output classes (each output corresponds to an glas position) with image classification models on RGB images bad prediciton performance and no training improvement
+- New approach needed for high accuracy: single output classification model with depth images
+- Finding right orientation and position with th Cobot to put the glas to desired position was diffciult because of small space, whre the glas needed to be put
